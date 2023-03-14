@@ -1,0 +1,111 @@
+
+h3 {
+    text-align: center;
+}
+
+.field  {
+    background: green;
+    border: 7px solid black;
+    width: 700px;
+    height: 500px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    margin: auto;
+}
+
+.goal-zone-left {
+    position: absolute;
+    min-width: 40px;
+    width: 8%;
+    height: 100%;
+    background: white;
+    border-right: 3px solid red;
+    left: 0;
+    cursor: default;
+}
+
+.goal-zone-right {
+    position: absolute;
+    min-width: 40px;
+    width: 8%;
+    height: 100%;
+    background: white;
+    border-left: 3px solid red;
+    right: 0;
+    cursor: default;
+}
+
+.ball {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    z-index: 999;
+    transform: rotate(0.5turn);
+    transition: .37s all;
+}
+
+.ball-trail-1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: .40s all;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    z-index: 998;
+    padding: 2px;
+}
+
+.ball-trail-2 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: .43s all;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    z-index: 997;
+    padding: 2px;
+}
+
+.ball-trail-3 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: .46s all;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    z-index: 996;
+    padding: 2px;
+}
+
+.ball-trail-4 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: .49s all;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    z-index: 995;
+    padding: 2px;
+}
+
+.follow-circle {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1.5px solid rgb(88, 16, 202);
+    z-index: 999;
+    right: 10px;
+    top: 15px;
+    transition: .1 all;
+    pointer-events: none;
+}
